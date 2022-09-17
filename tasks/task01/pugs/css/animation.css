@@ -1,0 +1,44 @@
+@keyframes animate-a {
+  0% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes animate-b {
+  0% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.header {
+    animation: 1s cubic-bezier(.68,-0.55,.27,1.55) animate-b infinite;
+}
+
+.header:hover {
+    animation-play-state: paused;
+}
+
+.photo img {
+    filter: blur(1.6px);
+}
+
+.photo img:hover {
+    filter: blur(0);
+}
+
+.photo:hover {
+  animation: 1s cubic-bezier(.68,-0.55,.27,1.55) animate-a infinite;
+ 
+  /* opacity: 0.8; */
+}
