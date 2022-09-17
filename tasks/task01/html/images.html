@@ -1,0 +1,75 @@
+<html lang="en"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>袁俊杰的图床</title><style> @keyframes animate-a {
+  0% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes animate-b {
+  0% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.header {
+    animation: 1s cubic-bezier(.68,-0.55,.27,1.55) animate-b infinite;
+}
+
+.header:hover {
+    animation-play-state: paused;
+}
+
+.photo img {
+    filter: blur(1.5px);
+}
+
+.photo img:hover {
+    filter: blur(0);
+}
+
+.photo:hover {
+  animation: 1s cubic-bezier(.68,-0.55,.27,1.55) animate-a infinite;
+ 
+  /* opacity: 0.8; */
+}
+</style><style> body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header {
+  color: #333;
+  text-align: center;
+}
+.photo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    break-inside: avoid;
+}
+.photo img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.2s ease-in-out;
+}
+</style><style>.main {
+    column-count: 3;
+    column-gap: 15px;
+}</style><style>.wrapper {
+    padding: 15px;
+    margin: auto;
+    max-width: 70%;
+}</style><style>@media screen and (max-width: 768px) {
+    .main {
+        column-count: 2;
+    }
+}</style></head><body> <div class="wrapper"><h1 class="header">袁俊杰的图床</h1><div class="main"><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/sNrtnXpaMQ.jpg"/><div class="photo-0">Photo-0</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/squxwRxjvd.jpg"/><div class="photo-1">Photo-1</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/IjPLLoRYAD.jpg"/><div class="photo-2">Photo-2</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/KAKpVeFaQv.jpg"/><div class="photo-3">Photo-3</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/SzrolOXKRo.jpg"/><div class="photo-4">Photo-4</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/dwJKOCgrzc.jpg"/><div class="photo-5">Photo-5</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/vaVGFdJohy.jpg"/><div class="photo-6">Photo-6</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/aAUIXKCzvz.jpg"/><div class="photo-7">Photo-7</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/PEfntrBDia.jpg"/><div class="photo-8">Photo-8</div></div><div class="photo"><img src="https://learn.91tangzhuan.com/imgsrv/pic/vFiTiAHflX.jpg"/><div class="photo-9">Photo-9</div></div></div></div></body></html>

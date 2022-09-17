@@ -1,0 +1,48 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title 袁俊杰的图床
+        style 
+            include css/animation.css
+        style 
+            include css/images.css
+        style. 
+            .main {
+                column-count: 3;
+                column-gap: 15px;
+            }
+        style. 
+            .wrapper {
+                padding: 15px;
+                margin: auto;
+                max-width: 70%;
+            }
+        style. 
+            @media screen and (max-width: 768px) {
+                .main {
+                    column-count: 2;
+                }
+            }
+    body 
+        .wrapper
+            h1.header 袁俊杰的图床
+            .main
+                -
+                    let list = [
+                        "https://learn.91tangzhuan.com/imgsrv/pic/sNrtnXpaMQ.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/squxwRxjvd.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/IjPLLoRYAD.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/KAKpVeFaQv.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/SzrolOXKRo.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/dwJKOCgrzc.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/vaVGFdJohy.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/aAUIXKCzvz.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/PEfntrBDia.jpg",
+                        "https://learn.91tangzhuan.com/imgsrv/pic/vFiTiAHflX.jpg",
+                    ]
+                each item,index in list
+                    .photo
+                        img(src=item)
+                        div(class='photo-'+ index)='Photo-' +index
