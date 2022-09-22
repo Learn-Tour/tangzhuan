@@ -1,0 +1,21 @@
+{
+  "name": "task02",
+  "version": "1.0.0",
+  "description": "by 袁俊杰",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.7.1",
+    "node-sass": "^7.0.3",
+    "pug": "^3.0.2",
+    "pug-plugin": "^4.3.2",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0"
+  }
+}

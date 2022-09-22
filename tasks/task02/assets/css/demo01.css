@@ -1,0 +1,42 @@
+/* @import url('https://use.typekit.net/lxq7gid.css'); */
+* {
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: #fff;
+  color: #497285;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #497285;
+}
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+h2 {
+  font-size: 8em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  color: #fff;
+  font-family: 'tablet-gothic-condensed', 'arial narrow', arial, verdana,
+    sans-serif;
+}
+.css {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1280px) {
+  h2 {
+    font-size: 5em;
+  }
+}
