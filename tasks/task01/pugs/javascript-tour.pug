@@ -4,9 +4,12 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title JavaScript之旅
+        style
+            include css/javascript.css
     body 
         h1 MorFans test
         img(src="https://roy-tian.github.io/learning-area/extras/getting-started-web/beginner-html-site-scripted/images/firefox-icon.png" alt="Firefox 标志：一只盘旋在地球上的火狐")
+        p.info 点击图片可切换图片
         p MorFans 是一个独立博客，这里聚集着
             - 
                 var names = [
@@ -22,3 +25,6 @@ html(lang="en")
             | 为了达成我们共同的理想，我们遵循一系列的价值观和理念，请参阅 
             a(href="https://www.morfans.cn") 魔帆博客
             | 。
+        button 切换用户
+    script
+        include js/javascript.js

@@ -1,40 +1,4 @@
-<html lang="en"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>JavaScript之旅</title><style>html {
-  font-size: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #00539f;
-}
-
-body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #ff9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
-}
-
-h1 {
-  font-size: 48px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-  color: #00539f;
-  text-shadow: 3px 3px 1px black;
-}
-
-p,
-li {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-img {
-  display: block;
-  margin: 0 auto;
-}
-.info{
-  text-align: center;
-}</style></head><body> <h1>MorFans test</h1><img src="https://roy-tian.github.io/learning-area/extras/getting-started-web/beginner-html-site-scripted/images/firefox-icon.png" alt="Firefox 标志：一只盘旋在地球上的火狐"/><p class="info">点击图片可切换图片</p><p>MorFans 是一个独立博客，这里聚集着<li>技术</li><li>折腾</li><li>记录</li></p><p> 我们致力于让 Internet 保持活力，保持畅通，人人皆可贡献，人人皆可创造。我们坚信：开放平台的协作对于人的发展至关重要，也决定着我们共同的未来。</p><p> 为了达成我们共同的理想，我们遵循一系列的价值观和理念，请参阅 <a href="https://www.morfans.cn">魔帆博客</a>。</p><button>切换用户</button></body><script>// 图片切换
+// 图片切换
 
 let myImage = document.querySelector('img');
 
@@ -81,4 +45,4 @@ if (!storeName) {
 }
 
 // 按钮点击实现
-myButton.addEventListener('click', () => setUserName());</script></html>
+myButton.addEventListener('click', () => setUserName());
