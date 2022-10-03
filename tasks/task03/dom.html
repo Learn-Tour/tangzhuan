@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 游乐场</title>
+</head>
+<body>
+    <a href="https://www.morfans.cn">魔帆博客</a>
+    <br>
+    <a href="https://lab.morfans.cn">MF Lab</a>
+    <br>
+    <button class="createp">创建一个标签</button> <button onclick="delete_p()">删除一个标签</button>
+</body>
+<script>
+// DOM 查询
+const a1 = document.querySelector('a');
+console.log(a1.href);
+
+const links = document.querySelectorAll('a');
+for (const a of links) {
+    console.log(a.href);
+}
+
+// DOM 创建
+const create_btn = document.querySelector(".createp");
+
+// DOM 事件
+create_btn.addEventListener('click',()=>{
+    const p = document.createElement('p');
+    p.textContent="你好世界" + Date.now().toString();
+    document.body.appendChild(p);
+})
+
+// DOM 删除
+// DOM 事件
+function delete_p(){
+    const p = document.querySelector('p');
+    if (p == null){
+        alert("没有p标签供删除！");
+        return;
+    }
+    // document.body.removeChild(p)
+    // or ..
+    const body = document.querySelector('body');
+    body.removeChild(p);
+}
+</script>
+</html>
