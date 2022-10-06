@@ -9,6 +9,10 @@ header {
     box-shadow: -1px 17px 65px -27px rgba(0,0,0,0.5);
     -webkit-box-shadow: -1px 17px 65px -27px rgba(0,0,0,0.5);
     -moz-box-shadow: -1px 17px 65px -27px rgba(0,0,0,0.5);
+
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header > nav {
@@ -26,8 +30,8 @@ main {
     grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     gap: 32px;
-    margin: 20px 30px;
-    padding-top: 50px;
+    margin-top: 80px;
+    padding: 80px 60px;
 }
 
 .album {
