@@ -5,3 +5,5 @@
     - [在线预览](https://learn-tour.github.io/tangzhuan/tasks/task03/dom.html)
 - [JS 画廊](gallery-start/main.js)
     - [在线预览](https://learn-tour.github.io/tangzhuan/tasks/task03/gallery-start/index.html)
+- [QQ音乐 - 使用 axios 动态获取数据](./qq-music/main.js)
+    - [在线预览](https://learn-tour.github.io/tangzhuan/tasks/task03/qq-music/index.html)
