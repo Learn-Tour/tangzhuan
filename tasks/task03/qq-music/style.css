@@ -45,6 +45,7 @@ main {
 
 .album > img:hover {
     /* filter: blur(1.5rem); */
+    opacity: .7;
 }
 .album > img:hover::after {
     content: "删除";

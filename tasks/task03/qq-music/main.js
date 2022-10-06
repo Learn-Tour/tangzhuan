@@ -27,7 +27,6 @@ function _buildAlbum(album,mountPoint){
     img.src = album.photo;
     img.alt = album.name;
    
-
     // 歌名
     const name = document.createElement("div");
     name.textContent = album.name;
@@ -56,4 +55,9 @@ function _buildAlbum(album,mountPoint){
     const root = document.querySelector(mountPoint);
     console.log("挂载歌曲", album.name ,"到",mountPoint);
     root.appendChild(node);
+
+    img.addEventListener('click',()=>{
+        node.parentElement.removeChild(node);
+        console.log("删除",album.name);
+    })
 }
