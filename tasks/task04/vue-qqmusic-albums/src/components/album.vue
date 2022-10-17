@@ -1,6 +1,6 @@
 <template lang="pug">
 .album
-  img(:src="album.img" alt)
+  img(:src="album.photo")
   .name {{ album.name }}
   .info
     .author {{ album.author }}
