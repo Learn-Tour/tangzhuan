@@ -1,0 +1,20 @@
+{
+  "name": "vue-taobao",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@volar/vue-language-plugin-pug": "^1.0.8",
+    "vite": "^3.1.0"
+  }
+}
