@@ -1,8 +1,7 @@
 <template lang="pug">
-div
-    .container 
-        .main 
-            Item(v-for="item in items",:key="item.itemId",:item="item")
+.container 
+    .main 
+        Item(v-for="item in items",:key="item.itemId",:item="item")
     Footer
 </template>
 
