@@ -2,16 +2,31 @@
 div
     .container 
         .main 
-            Item
+            Item(v-for="item in items",:key="item.itemId",:item="item")
     Footer
 </template>
 
 <script>
 import Footer from './components/Footer.vue';
 import Item from './components/item.vue';
+import * as api from './service/api'
 
 export default {
-    components: { Footer, Item }
+    components: { Footer, Item },
+    data() {
+        return {
+            items: []
+        }
+    },
+    methods: {
+        async listTaobao() {
+            const list = await api.getLists();
+            this.items = list;
+        }
+    },
+    mounted() {
+        this.listTaobao()
+    }
 }
 
 </script>
