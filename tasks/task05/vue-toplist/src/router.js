@@ -21,6 +21,11 @@ const routes = [
                 component: MyLikes
             }
         ]
+    },
+    {
+        path: '/detail',
+        name: 'Detail',
+        component: ()=> import('./views/SongDetail.vue')
     }
 ]
 
