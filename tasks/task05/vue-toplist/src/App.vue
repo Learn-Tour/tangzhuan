@@ -1,6 +1,4 @@
 <script setup>
-import TopList from './views/TopList.vue';
-import Home from './views/Home.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 
 // This starter template is using Vue 3 <script setup> SFCs
@@ -14,8 +12,7 @@ export default {
 </script>
 
 <template lang="pug">
-//- router-view
-Home
+router-view
 </template>
 
 <style>
