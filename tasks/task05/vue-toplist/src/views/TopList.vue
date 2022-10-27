@@ -1,8 +1,18 @@
 <template lang="pug">
-van-row(gutter="20")
-    van-col(:span="span",v-for="item in lists")
-        TopItem(:item="item")
+.container
+        TopItem.item(v-for="item in lists",:item="item")
 </template>
+
+<style lang="scss">
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+</style>
 
 <script>
 import TopItem from '../components/TopItem.vue';

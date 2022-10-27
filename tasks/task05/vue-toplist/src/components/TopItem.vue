@@ -7,21 +7,21 @@ router-link.item(v-bind:to="'/detail/' + item.id")
 
 <script>
 export default {
-    props: {
-        item: {
-            type: Object,
-            default: {
-                cover: "https://y.gtimg.cn/music/photo_new/T002R300x300M000002CcJgN0Xz8Co_3.jpg",
-                title: "标题",
-                singer: "作者"
-            }
-        }
-    }
-}
+  props: {
+    item: {
+      type: Object,
+      default: {
+        cover: "https://y.gtimg.cn/music/photo_new/T002R300x300M000002CcJgN0Xz8Co_3.jpg",
+        title: "标题",
+        singer: "作者",
+      },
+    },
+  },
+};
 </script>
 
-<style lang="sass">
-.text 
+<style lang="sass" scoped>
+.text
     color: #1d2129
     font-size: 15px
 </style>
