@@ -12,18 +12,18 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref } from "vue";
 export default {
-    data() {
-        const active = ref(0);
-        return {
-            active
-        }
-    }
-}
+  data() {
+    const active = ref(0);
+    return {
+      active,
+    };
+  },
+};
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .page
     display: flex
     flex-direction: column
